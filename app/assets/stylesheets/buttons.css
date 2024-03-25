@@ -10,7 +10,8 @@
   font-size: 18px;
   padding-right: 17px;
   text-transform: uppercase;
-  font-family: "Shadows Into Light", static;
+  font-family: "Special Elite", system-ui;
+
 }
 
 .cta svg {

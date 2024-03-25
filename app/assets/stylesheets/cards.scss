@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   background: white;
   border-radius: 10px;
   display: flex;
@@ -43,16 +43,19 @@
 
 .card__title {
   margin: 0;
-  font-size: 12px;
-  color: #333;
+  font-size: 22px;
+  color: #252525;
   font-weight: 700;
+  font-family: "Comic Neue", cursive;
+
 }
 
 .card__description {
   margin: 10px 0 0;
-  font-size: 9.5px;
-  color: #5f5e5e;
+  font-size: 18px;
+  color: #444343;
   line-height: 1.4;
+  font-family: "Comic Neue", cursive;
 }
 
 .card:hover svg {

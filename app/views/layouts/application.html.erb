@@ -9,33 +9,36 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+
+
     <style>
       h1 {
         text-align: center;
         margin-top: 50px;
-         color: #803030;
-         font-family: "Shadows Into Light", static;
+        color: #803030;
+         font-family: "Special Elite", system-ui;
+        font-weight: 300;
+        font-style: normal;
         font-size: 60px;
-         font-weight: 700;
       }
 
       h2 {
         text-align: center;
         margin-top: 50px;
          color: #803030;
-         font-family: "Shadows Into Light", static;
-        font-size: 40px;
-         font-weight: 700;
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+        font-style: normal;
+       color: #99582a
       }
     </style>
   </head>
 
   <body>
-    <h1>SheilaReid</h1>
+    <h1>Sheila Reid</h1>
     <%= yield %>
-    <p>Made with ❤️ by Emilia</p>
   </body>
 </html>
