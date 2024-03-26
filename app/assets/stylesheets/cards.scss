@@ -52,7 +52,7 @@
 
 .card__description {
   margin: 10px 0 0;
-  font-size: 18px;
+  font-size: 17px;
   color: #444343;
   line-height: 1.4;
   font-family: "Comic Neue", cursive;
@@ -61,4 +61,11 @@
 .card:hover svg {
   scale: 0;
   transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-left: 0; /* Remove left margin */
+  }
 }

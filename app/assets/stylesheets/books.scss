@@ -1,0 +1,83 @@
+
+
+.books {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.books:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.books svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.books:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.books__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.books:hover .books__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.books__title {
+  margin: 0;
+  font-size: 18px;
+  color: #252525;
+  font-weight: 700;
+  font-family: "Comic Neue", cursive;
+}
+
+.books__description {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #444343;
+  line-height: 1.4;
+  font-family: "Comic Neue", cursive;
+}
+
+.books:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .books {
+    width: 100%;
+    margin: 0px;
+  }
+}

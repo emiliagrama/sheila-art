@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def artwork
   end
 
+  def books
+  end
+
   def biography
   end
 end
