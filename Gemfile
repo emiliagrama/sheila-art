@@ -20,6 +20,7 @@ gem "sassc-rails"
 
 gem "bootstrap", "~> 5.2"
 
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
